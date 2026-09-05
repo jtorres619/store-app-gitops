@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.services.users.name }}
+spec:
+  selector:
+    app: {{ .Values.services.users.name }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.services.users.port }}
+      targetPort: {{ .Values.services.users.port }}
+  type: ClusterIP
