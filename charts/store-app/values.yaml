@@ -1,0 +1,21 @@
+services:
+  users:
+    name: users-service
+    port: 8081
+    image:
+      repository: ""
+      tag: ""
+
+  orders:
+    name: orders-service
+    port: 8082
+    image:
+      repository: ""
+      tag: ""
+
+  products:
+    name: products-service
+    port: 8083
+    image:
+      repository: ""
+      tag: ""
