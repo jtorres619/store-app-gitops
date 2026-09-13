@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.services.orders.name }}
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: {{ .Values.services.orders.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.services.orders.name }}
+    spec:
+      containers:
+        - name: {{ .Values.services.orders.name }}
+          image: "{{ .Values.services.orders.image.repository }}:{{ .Values.services.orders.image.tag }}"
+          ports:
+            - containerPort: {{ .Values.services.orders.port }}
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 500m
+              memory: 256Mi
