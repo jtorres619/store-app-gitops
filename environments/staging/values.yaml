@@ -1,0 +1,12 @@
+services:
+  users:
+    image:
+      tag: "a28ce529a3cb70498183f76c6c83c59afa904c9d"
+
+  orders:
+    image:
+      tag: "a28ce529a3cb70498183f76c6c83c59afa904c9d"
+
+  products:
+    image:
+      tag: "a28ce529a3cb70498183f76c6c83c59afa904c9d"
