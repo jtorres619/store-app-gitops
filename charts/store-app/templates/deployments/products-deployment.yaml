@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: {{ .Values.services.products.name }}
-          image: "{{ .Values.services.products.image.repository }}:{{ .Values.services.products.image.tag }}"
+          image: "{{ .Values.global.imageRegistry }}/products-service:{{ .Values.services.products.image.tag }}"
           ports:
             - containerPort: {{ .Values.services.products.port }}
           resources:

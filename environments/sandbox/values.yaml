@@ -1,15 +1,12 @@
 services:
   users:
     image:
-      repository: 347288885928.dkr.ecr.us-east-1.amazonaws.com/store-app/users-service
       tag: "a28ce529a3cb70498183f76c6c83c59afa904c9d"
 
   orders:
     image:
-      repository: 347288885928.dkr.ecr.us-east-1.amazonaws.com/store-app/orders-service
       tag: "a28ce529a3cb70498183f76c6c83c59afa904c9d"
 
   products:
     image:
-      repository: 347288885928.dkr.ecr.us-east-1.amazonaws.com/store-app/products-service
       tag: "a28ce529a3cb70498183f76c6c83c59afa904c9d"
