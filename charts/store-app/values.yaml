@@ -1,3 +1,6 @@
+global:
+  imageRegistry: 347288885928.dkr.ecr.us-east-1.amazonaws.com/store-app
+
 services:
   users:
     name: users-service
